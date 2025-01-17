@@ -20,10 +20,11 @@ function Dashboard() {
     }
 
     if(!user) {
-      navigate('login')
+      navigate('/')
     }
-
+    
     dispatch(getGoals())
+    
 
     return () => {reset()}
 
@@ -36,7 +37,7 @@ function Dashboard() {
     <>
     <section className='heading'>
       <h1> Welcome {user && user.name} </h1>
-      <p>goals dashboard</p>
+      <p>Goal Dashboard</p>
     </section>
     <GoalForm />
 

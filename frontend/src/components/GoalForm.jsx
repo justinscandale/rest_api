@@ -19,8 +19,8 @@ function GoalForm() {
         <section className="form">
             <form onSubmit={onSubmit}>
                 <div className="form-group">
-                    <label htmlFor="text">Goal</label>
-                    <input type="text" name='text' id='text' value={text} onChange={(e)=>setText(e.target.value)}/>
+                    <input type="text" name='text' id='text' value={text} placeholder="Enter goal here..." 
+                    onChange={(e)=>setText(e.target.value)}/>
                 </div>
                 <div className="form-group">
                     <button className="btn btn-block" type="submit"> 
